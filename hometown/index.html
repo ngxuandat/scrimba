@@ -20,20 +20,28 @@
             <div id="cards">
                 <section>
                     <div style="display: flex;">
-                        <img src="assets/rinkoPark.jpg">
-                        <img src="assets/yamashita.webp" onclick="openMap('yamashitaPark')" alt="yamashita park">
+                        <a href="#map" onclick="openMap(rinkoPark)">
+                            <img src="assets/rinkoPark.jpg">
+                        </a>
+                        <a href="#map" onclick="openMap(yamashitaPark)">
+                            <img src="assets/yamashita.webp" alt="yamashita park">
+                        </a>
                     </div>
                     <h3>
-                        <a href="#map" onclick="openMap('rinkoPark')">臨港パーク</a>から山下公園まで散歩</h3>
+                        臨港パークから山下公園まで散歩</h3>
                     <p>海沿いの公園と横浜の東洋と西洋の混ざった景色を楽しみにしながら散歩する。</p>
                 </section>
                 <section>
-                    <img src="assets/chinesetown.webp" onclick="openMap('chinaTown')" alt="chinesetown">
+                    <a href="#map" onclick="openMap(chinaTown)">
+                        <img src="assets/chinesetown.webp" alt="chinesetown">
+                    </a>
                     <h3>中華街でランチ</h3>
                     <p>日本の最も大きい中華街。真ん中じゃなくて周辺にあるお店がお勧め！</p>
                 </section>
                 <section>
-                    <img src="assets/noge.jpeg" onclick="openMap('noge')" alt="noge cho">
+                    <a href="#map" onclick="openMap(noge)">
+                        <img src="assets/noge.jpeg" alt="noge cho">
+                    </a>
                     <h3>野毛町で居酒屋文化を体験</h3>
                     <p>横浜の人は大体野毛で飲む。美味しいお店いっぱいある！</p>
                 </section>
@@ -43,11 +51,12 @@
             <div id="map">
                 <h1></h1>
                 <iframe
+                    id="googleMap"
                     width="100%"
                     height="650px"
                     frameborder="0"
                     style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Japan%2C%20Kanagawa%2C%20Yokohama%2C%20Naka%20Ward%2C%20Yamashitach%C5%8D279%20%E5%B1%B1%E4%B8%8B%E5%85%AC%E5%9C%92&maptype=roadmap"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Japan%2C%20Kanagawa%2C%20Yokohama%2C%20Nishi%20Ward%2C%20Minatomirai%2C%201%20Chome%E2%88%921%E2%88%921%20%E8%87%A8%E6%B8%AF%E3%83%91%E3%83%BC%E3%82%AF&maptype=roadmap"
                     allowfullscreen></iframe>
             </div>
             <div id="selfintro">
