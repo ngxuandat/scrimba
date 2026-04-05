@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: "Zen Antique", serif;
+    font-weight: 300;
+}
+
+#hero {
+    background-image: url("./assets/yokohama.jpg");
+    background-size: cover;
+    background-position: center -200px;
+    background-repeat: no-repeat;
+    min-height: 90dvh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#hero h1 {
+    margin: 0;
+    text-align: center;
+    color: #FFFF;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding-top: 1.5cm;
+}
+
+#mid-section {
+    background-color: #EAB464;
+    color: #03256C;
+    margin: 0;
+    padding: 0;
+}
+
+#mid-section h1 {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+#cards {
+    display: flex;
+    gap: 24px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+#cards img {
+    width: 4cm;
+    height: 4cm;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-top: 10px ;
+}
+
+#cards section {
+    width: 320px;
+    height: 360px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    white-space: normal;
+}
+
+#footer {
+    display: flex;
+}
+
+#selfintro {
+    display: flex;
+    background-color: #6DBFF2;
+    color: #03256C;
+    margin-left: auto;
+    height: 400px;
+    width: 400px;
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 30px;
+    text-align: center;
+    border-bottom: 4px solid #03256C;
+}
+
+#selfintro img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    justify-content: start;
+    padding: 5px;
+    margin: auto;
+}
+
+#selfintro h3 {
+    font-weight: bolder;
+}
+
+#introtext {
+    margin: auto;
+}
+
+#map {
+    width: 70%;
+    margin: 5px;
+}
+
+#mid-section a,
+#mid-section a:visited,
+#mid-section a:hover,
+#mid-section a:active {
+    color: inherit;
+    font: inherit;
+    text-decoration: underline;
+}
