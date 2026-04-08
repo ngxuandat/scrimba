@@ -1,44 +1,56 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+
     </head>
     <body>
-        <button>Light mode / Dark mode</button>
-        <h1>Generate a random password</h1>
-        <h3>Never use an insecure password again.</h3>
-        <h2>What do you want your passwords to include?</h2>
-        <div>
-            <label>
-                <input type="checkbox" id="hasUppercase">
-                uppercase
+        <div id="main-block">
+            <label id="themeToggle">
+                <input type="checkbox" id="theme">
+                Light Mode
             </label>
-            <label>
-                <input type="checkbox" id="hasNumber">
-                number
-            </label>
-            <label>
-                <input type="checkbox" id="hasSymbol">
-                symbols
-            </label>
-        </div>
-        <div>
-            <label for="password-length">Password Length:</label>
-            <input
-                type="number"
-                id="password-length"
-                placeholder="15"
-            >
-        </div>
-
-        <button onclick="generatePasswords()">Generate passwords</button>
-
-        <hr>
-        <div id="passwords-output">
+            <h1 id="generate-a">Generate a</h1>
+            <h1 style="color: #4ADF86;">random password</h1>
+            <h3>Never use an insecure password again.</h3>
+            <h3>What do you want your passwords to include?</h3>
             <div>
-                <p id="firstPassword">p1</p>
+                <label>
+                    <input type="checkbox" id="hasUppercase">
+                    uppercase
+                </label>
+                <label>
+                    <input type="checkbox" id="hasNumber">
+                    number
+                </label>
+                <label>
+                    <input type="checkbox" id="hasSymbol">
+                    symbols
+                </label>
             </div>
             <div>
-                <p id="secondPassword">p2</p>
+                <label for="password-length">Password Length:</label>
+                <input
+                    type="number"
+                    id="password-length"
+                    placeholder="15"
+                >
+            </div>
+
+            <button onclick="generatePasswords()">Generate passwords</button>
+
+            <hr>
+            <div id="passwords-output">
+                <div class="passwordBox" onclick="saveToClipboard('firstPassword')">
+                    <p id="firstPassword"></p>
+                </div>
+                <div class="passwordBox" onclick="saveToClipboard('secondPassword')">
+                    <p id="secondPassword"></p>
+                </div >
             </div>
         </div>
 

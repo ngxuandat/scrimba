@@ -1,11 +1,129 @@
 body {
-    margin: 0;
+    margin: 50px;
+    font-family: "Inter";
 }
 
 
 
+#main-block {
+    width: 550px;
+    height: 550px;
+    flex-shrink: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1F2937;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    position: relative;
+}
+
+#main-block.light-mode {
+    background-color: #ECFDF5;
+}
+
+
+
+#main-block h1 {
+    font-family: "Karla", "sans-serif";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin: 0;
+    width: 354px;
+}
+
+#generate-a {
+    color: #FFF;
+}
+#generate-a.light-mode {
+    color: #2B283A;
+}
+
+#main-block h3, label{
+    color: #D5D4D8;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 5px;
+}
+
+#main-block.light-mode h3, label {
+    color: #6B7280;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+#main-block label {
+    font-size: 15px;
+    margin: 0;
+    padding: 10px;
+}
+
+button {
+    margin-top: 51px;
+    margin-bottom: 35px;
+    display: inline-flex;
+    padding: 9px 17px 9px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 6px;
+    color: #FFF;
+    background: #10B981;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+hr {
+    background: #2F3E53;
+}
 
 #passwords-output {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.passwordBox {
+    margin-top: 35px;
+    border-radius: 6px;
+    background: #273549;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    min-height: 39px;
+    min-width: 120px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#firstPassword, #secondPassword {
+    color: #55F991;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+#themeToggle {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    margin: 0;
 }
