@@ -1,0 +1,5 @@
+- [x] Ability to set pass length (default 15)
+- [x] Ability to toggle symbols, numbers, uppercase
+- [x] Ability to copy password to clipboard
+- [x] Ability to generate password on button click
+- [ ] toggle light mode/dark mode
