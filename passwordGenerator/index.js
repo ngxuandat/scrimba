@@ -3,7 +3,6 @@ const lower = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","
 const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 
-let theme = 'light'; /// default is light mode
 
 function makePassword(length, seedArray) {
     let out = '';

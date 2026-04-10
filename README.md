@@ -1,9 +1,9 @@
 Some simple Solo Project to brush up skills I did when learning on scrimba
 
 
-- [ ] Hometown homepage
-- [ ] passwordGenerator
-- [ ] Unit Converter
+- [x] Hometown homepage
+- [x] passwordGenerator
+- [x] Unit Converter
 - [ ] Instagram Clone
 - [ ] Restaurant Ordering App
 - [ ] Learning Journal

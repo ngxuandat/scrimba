@@ -1,0 +1,137 @@
+body {
+    font-family: "Inter", "sans-serif";
+}
+
+#main-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    height: 729px;
+    position: relative;
+
+}
+
+label {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FFF;
+}
+
+#input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 285px;
+    background-color: #6943FF;
+}
+
+#h1-box {
+    width: 448.4px;
+    height: 38px;
+    margin-top: 33px;
+    margin-bottom: 30px;
+    margin-left: 51px;
+    margin-right: 51px;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px; /* 135.714% */
+    letter-spacing: -0.84px;
+    text-align: center;
+}
+
+#input-field  input {
+    min-width: 117px;
+    height: 83px;
+    border-radius: 5px;
+    background-color: #6943FF;
+    border: 2px solid #B295FF;
+    text-align: center;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24.394px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    field-sizing: content;
+    padding: 3px;
+}
+
+#input-field input::value {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #FFF;
+    padding: 9px 27.5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #3D3D3D;
+    margin-bottom: 34px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+button:hover {background-color: #d1cbcb;}
+
+#conversion-result-block {
+    height: 444px;
+    width: 550px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#conversion-result-block.dark-mode {
+    background: #1F2937;
+}
+
+.conversion-result-individual-block {
+    width: 500px;
+    height: 109px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    margin: 11px;
+    text-align: center;
+}
+
+.conversion-result-individual-block.dark-mode {
+    background: #273549;
+    color: #CCC1FF;
+}
+
+.conversion-result.dark-mode {
+    color: #FFFFFF;
+}
+
+.output-type {
+    color: #5A537B;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.conversion-result {
+    color: #353535;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
