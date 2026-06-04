@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h2>The best burgurs and pizzas in town.</h2>
+        </header>
+        <div id="overlay"></div>
+        <main>
+            <div id="menu">
+                <div class="menu-item">
+                    <p class="item-graphic">🍕</p>
+                    <p class="item-title">Pizza</p>
+                    <p class="item-des">pepperoni,mushrom,mozarella</p>
+                    <p class="item-price">$14</p>
+                    <button class="add-to-cart">+</button>
+                </div>
+            </div>
+            <div id="checkout">
+                <p>Your Order</p>
+                <div id="cart">
+                </div>
+                <hr>
+                <div class="checkout-item">
+                    <p>Total Price: </p>
+                    <p id="total-price">$0</p>
+                </div>
+                <button id="complete-order-btn">Complete Order</button>
+            </div>
+            <div id="enter-card-info-form">
+                <form id="card-info-form">
+                    <p>Enter card details</p>
+                    <input id="user-name" name="userName" placeholder="Enter your name">
+                    <input id="card-number" name="cardNumber" placeholder="Enter card number">
+                    <input id="card-cvv" name="cardCvv" placeholder="Enter CVV">
+                    <button type="submit" id="pay-btn">Pay</button>
+                </form>
+            </div>
+            <div id="thankyou-and-review">
+                <p id="thankyou-msg">Thanks, James! Your order is on its way!</p>
+                <p id="review-prompt">Rate your experience with us:</p>
+                <input type="range" min="0.5" max="5" step="0.5" value="2.5" class="rating" style="--val:2.5" oninput="this.style='--val:'+this.value">
+            </div>
+        </main>
+        <script src="script.js" type="module"></script>
+    </body>
+</html>

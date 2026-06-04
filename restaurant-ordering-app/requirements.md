@@ -1,0 +1,7 @@
+- [ ] follow the design spec in the Figma file
+- [ ] Use valinat JavaScript, HTML, and CSS to build the application
+- [ ] Render the menu items dynamically from a JavaScript array of objects
+- [ ] Be able to add/remove items from the order
+- [ ] Have a payment modal with compulsory form inputs
+- [ ] Create meal deal discounts and apply them to the order total
+- [ ] Allow user to rate the experience after payment

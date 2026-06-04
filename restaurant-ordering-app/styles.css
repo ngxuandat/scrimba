@@ -1,0 +1,278 @@
+html, body {
+  font-family: "Smythe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+header {
+    background-image: url("assets/header-image.png");
+    background-size: cover;
+    color: white;
+    height: 170px;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-bottom: 67px;
+}
+
+main {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item > p {
+    margin: 0;
+}
+
+.menu-item > div > p {
+    margin: 0;
+
+}
+
+.menu-item > div > .item-title {
+    font-size: 28px;
+}
+
+.menu-item > div > .item-des {
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.menu-item > div > .item-price {
+    font-size: 20px;
+}
+
+
+
+
+.menu-item {
+    width: 500px;
+    height: 140px;
+    display: flex;
+    margin: 0px;
+}
+
+.menu-item > div > p {
+    padding-bottom: 8px;
+}
+
+
+
+.add-to-cart-btn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #DEDEDE;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 200;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #49c46e;
+}
+
+.add-to-cart-btn:active {
+    background-color: #16DB99;
+}
+
+.item-graphic {
+    font-size: 79px;
+    padding-right: 30px;
+}
+
+hr {
+    margin: 0;
+    margin-bottom: 45px;
+    width: 500px;
+}
+
+
+/* checkout div */
+#checkout > p {
+    text-align: center;
+    font-size: 28px;
+    margin: 0px;
+    padding-bottom: 40px;
+
+}
+
+#checkout > hr {
+    border: 1px solid black;
+    margin-bottom: 14px;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.remove-item-btn {
+    border: none;
+    background-color: white;
+    color: #BBBBBB;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    padding: 0px 12px;
+}
+.remove-item-btn:hover {
+    cursor: pointer;
+}
+
+.remove-item-btn:active {
+    color: #8B8B8B;
+}
+
+/* checkout-item */
+
+.checkout-item > div {
+    display: flex;
+}
+.checkout-item > div > p, .checkout-item > p{
+    font-size: 28px;
+    margin: 0px;
+}
+
+/* complete order button */
+#complete-order-btn, #pay-btn {
+    background-color: #16DB99;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border: none;
+    border-radius: 3%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#complete-order-btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+}
+
+#complete-order-btn:not(:disabled):hover {
+    cursor: pointer;
+}
+
+#complete-order-btn:disabled {
+    background-color: #BBBBBB;
+}
+
+#complete-order-btn:disabled:hover {
+    cursor: not-allowed;
+}
+
+/* overlay backdrop */
+#overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* payment modal */
+#enter-card-info-form {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 524px;
+    height: 525px;
+    background-color: #ffffff;
+}
+
+#enter-card-info-form > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#enter-card-info-form > form > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-bottom: 44px;
+}
+
+#enter-card-info-form > form > input {
+    width: 475px;
+    height: 72px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #757575;
+    padding-left: 26px;
+    box-sizing: border-box;
+}
+
+
+#pay-btn {
+    width: 475px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+
+
+/* thankyou & review */
+#thankyou-and-review {
+    display: none;
+    background-color: #ECFDF5;
+    color: #065F46;
+    width: 504px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.rating {
+    background-color: #ECFDF5;
+    padding-bottom: 50px;
+    --size: 50px;
+    --mask: conic-gradient(from -18deg at 61% 34.5%, #0000 108deg, #065F46 0) 0 / var(--size),
+        conic-gradient(from 270deg at 39% 34.5%, #0000 108deg, #065F46 0) 0 / var(--size),
+        conic-gradient(from 54deg at 68% 56%, #0000 108deg, #065F46 0) 0 / var(--size),
+        conic-gradient(from 198deg at 32% 56%, #0000 108deg, #065F46 0) 0 / var(--size),
+        conic-gradient(from 126deg at 50% 69%, #0000 108deg, #065F46 0) 0 / var(--size);
+    --bg: linear-gradient(90deg, #065F46 calc(var(--size) * var(--val)), #ddd 0);
+    height: var(--size);
+    width: calc(var(--size) * 5);
+    border: 0; /* Firefox adds a default border to ranges */
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* Chrome and Safari */
+    &::-webkit-slider-runnable-track {
+        height: 100%;
+        mask: var(--mask);
+        mask-composite: intersect;
+        background: var(--bg);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    &::-webkit-slider-thumb {
+        opacity: 0;
+    }
+
+    /* Firefox */
+    &::-moz-range-track {
+        height: 100%;
+        mask: var(--mask);
+        mask-composite: intersect;
+        background: var(--bg);
+        print-color-adjust: exact;
+    }
+
+    &::-moz-range-thumb {
+        opacity: 0;
+    }
+}
