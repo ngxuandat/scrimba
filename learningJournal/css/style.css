@@ -3,3 +3,61 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    height: 83px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.page-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+}
+
+.hero {
+    height: 488px;
+    background-image: url("../images/blog-image-hero.png");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+ .hero > a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+ }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 53px;
+}
+
+.blog-preview {
+    width: 19rem;
+    height: 25rem;
+    gap: 0.5rem;
+}
+
+/* mobile interface */
+@media (max-width: 414px) {
+
+}
