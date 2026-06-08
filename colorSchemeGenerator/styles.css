@@ -1,0 +1,59 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.138);
+}
+
+body {
+    width: 550px;
+    height: 550px;
+    margin: auto;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header > input,
+header > select,
+header > button {
+    height: 42px;
+    border: 1px solid rgba(128, 128, 128, 0.221);
+}
+
+header > input {
+    width: 61px;
+    background-color: rgba(128, 128, 128, 0.213);
+}
+
+header > select {
+    width: 312px;
+    border-radius: 5%;
+}
+
+header > button {
+    width: 132px;
+    background-color: white;
+}
+
+#color-scheme {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    text-align: center;
+}
+
+.color-display {
+    width: 110px;
+    height: 90%;
+}
+
+#color-scheme > div > button {
+    margin-top: 15px;
+    border: none;
+    background-color: inherit;
+}

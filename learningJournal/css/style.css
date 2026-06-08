@@ -63,7 +63,6 @@ nav > a {
     padding-right: 30%;
     padding-left: 53px;
     padding-bottom: 60px;
-    /* TODO(human): add 3 flex properties to push content to bottom-left */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -77,7 +76,6 @@ nav > a {
 
 .container {
     display: grid;
-    /* TODO(human): replace this with a responsive grid-template-columns */
     grid-template-columns: repeat(3, minmax(130px, 1fr));
     gap: 1.5rem;
     margin: 53px;
