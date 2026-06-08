@@ -5,6 +5,8 @@ body {
 }
 
 main {
+    background-color: #FAFAFA;
+    padding-top: 83px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +19,10 @@ header {
     justify-content: space-between;
     font-size: 1.25rem;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
 }
 
 
@@ -88,9 +94,7 @@ nav > a {
     font-weight: bold;
 }
 
-main > p {
-    text-decoration: underline;
-}
+
 
 footer {
     /* height: 105px; */
@@ -108,6 +112,33 @@ footer > div {
 footer > div > p {
     margin: 0;
 }
+
+/* hero page */
+
+.hero-page-main-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-page-main-post > .blog-body {
+    width: 80%;
+}
+
+
+/* About page */
+
+.self-intro {
+    display: flex;
+    align-items: center;
+}
+.self-intro > img {
+    padding: 40px;
+}
+
+
+
 
 /* mobile interface */
 @media (max-width: 414px) {
