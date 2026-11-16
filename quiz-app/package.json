@@ -1,19 +1,18 @@
 {
   "name": "Scrim-s04vvhd",
   "description": "https://scrimba.com/fullstack-path-c0fullstack/~0vh",
+  "type": "module",
   "scripts": {
-    "watch": "webpack -w",
-    "build": "webpack"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "webpack": "^2.0"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "babel-core": "^6.0",
-    "babel-loader": "^7.0",
-    "babel-preset-env": "*",
-    "babel-preset-react": "*"
+    "@vitejs/plugin-react": "^6.3.0",
+    "vite": "^8.3.8"
   }
 }
